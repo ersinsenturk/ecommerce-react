@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 dark:bg-gray-700;
+  }
+  h1 {
+    @apply text-3xl font-bold;
+  }
+  h2 {
+    @apply text-2xl font-bold;
+  }
+  h3 {
+    @apply text-xl font-bold;
+  }
+  a {
+    @apply text-indigo-500 dark:text-indigo-200 underline;
+  }
+  main {
+    @apply container mx-auto px-4 py-6;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply text-white bg-indigo-700 hover:bg-indigo-800 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg text-sm px-3 lg:px-5 py-1.5 lg:py-2.5 focus:outline-none;
+  }
+}
